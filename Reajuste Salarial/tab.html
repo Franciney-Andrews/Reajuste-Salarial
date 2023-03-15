@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizações Tabajara</title>
+    <style>
+        body {
+            background-color: rgb(211, 134, 46);
+            font: normal 10pt Arial;
+        }
+        header {
+            text-align: center;
+            margin: 3.5%;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.35);
+        }
+    </style>
+</head>
+<body>  
+    <header>
+        <img src="tabajara.jpg" alt="foto">
+    </header>
+    <section>
+        <form>
+            <label for="salario">Informe o salário atual: </label>
+            <input type="number" id="salario" name="salario">
+
+            <input type="button" value="Reajustar" onclick="calcular()"><br><br>
+
+            <label for="salarioAntes">Salário antes do reajuste: </label>
+            <span id="salarioAntes"></span><br><br>
+
+            <label for="percentual">Percentual de aumento aplicado: </label>
+            <span id="percentual"></span><br><br>
+
+            <label for="valorAumento">Valor do aumento: </label>
+            <span id="valorAumento"></span><br><br>
+
+            <label for="novoSalario">Novo salário, após o aumento: </label>
+            <span id="novoSalario"></span><br><br>
+
+        </form>
+        
+        
+    </section>
+    <script src="tab.js"></script>
+</body>
+</html>
